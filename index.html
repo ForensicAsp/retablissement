@@ -131,6 +131,15 @@
             color: transparent;
         }
 
+        .subtitle-container {
+            position: relative;
+            text-align: center;
+            margin-bottom: 2rem;
+            display: inline-block;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
         .subtitle {
             text-align: center;
             margin-bottom: 2rem;
@@ -141,11 +150,52 @@
             color: transparent;
             font-style: italic;
         }
+
+        .heart-sparkle {
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            font-size: 14px;
+            animation: moveHeart 6s linear infinite; /* Slowed down to 6s */
+            opacity: 0;
+        }
+
+        @keyframes moveHeart {
+            0% {
+                left: 0;
+                opacity: 0;
+                transform: translateY(0) scale(0.8);
+            }
+            10% {
+                opacity: 1;
+                transform: translateY(-2px) scale(1);
+            }
+            50% {
+                transform: translateY(-4px) scale(1.2);
+            }
+            90% {
+                opacity: 1;
+                transform: translateY(-2px) scale(1);
+            }
+            100% {
+                left: 100%;
+                opacity: 0;
+                transform: translateY(0) scale(0.8);
+            }
+        }
     </style>
 </head>
 <body>
     <h1 class="title">Get Well Soon Jess! ❤️</h1>
-    <h2 class = "subtitle">With love from your friends on EGT</h2>
+    <div class="subtitle-container">
+        <h2 class="subtitle">With love from your friends on EGT</h2>
+        <div class="heart-sparkle" style="animation-delay: 0s;">💜</div>
+        <div class="heart-sparkle" style="animation-delay: -2s;">💗</div>
+        <div class="heart-sparkle" style="animation-delay: -4s;">💙</div>
+        <div class="heart-sparkle" style="animation-delay: -1s;">💜</div>
+        <div class="heart-sparkle" style="animation-delay: -3s;">💗</div>
+        <div class="heart-sparkle" style="animation-delay: -5s;">💙</div>
+    </div>
     <div class="cards-container">
         <!-- Jenny's Card -->
         <div class="card-modern-dark" data-emojis="🏳️‍⚧️,🍁,🎸,💙,🐶" style="--card-color: #F5A9B8">
