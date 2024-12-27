@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Get Well Soon Cards</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            margin: 0;
+            background: #1a1a1a;
+            min-height: 100vh;
+            padding: 2rem;
+        }
+
+        .cards-container {
+            max-width: 60ch;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            padding: 1rem;
+        }
+
+        .card-modern-dark {
+            background: #222222;
+            border-radius: 25px;
+            box-shadow: 0 12px 40px color-mix(in srgb, var(--card-color) 15%, transparent);
+            overflow: hidden;
+            position: relative;
+            border: 1px solid #333333;
+            transition: all 0.3s ease;
+        }
+
+        .header-image {
+            width: 100%;
+            height: 200px;
+            object-fit: scale-down;
+            border-bottom: 1px solid #333333;
+        }
+
+        .content {
+            padding: 2rem;
+            background: #222222;
+        }
+
+        .message {
+            color: #e5e5e5;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+
+        .signature-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            color: white;
+        }
+
+        .signature {
+            font-weight: 600;
+            background: linear-gradient(45deg, var(--card-color), color-mix(in srgb, var(--card-color) 80%, white));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            font-size: 1.3rem;
+        }
+
+        .extra-info {
+            display: flex;
+            gap: 0.8rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            padding: 0.5rem 1rem;
+            border-radius: 12px;
+            color: color-mix(in srgb, var(--card-color) 90%, white);
+            background: color-mix(in srgb, var(--card-color) 10%, transparent);
+            border: 1px solid color-mix(in srgb, var(--card-color) 20%, transparent);
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .tag:hover {
+            transform: translateY(-2px);
+        }
+
+        .confetti {
+            position: absolute;
+            pointer-events: none;
+            opacity: 0;
+            transform: translateY(10px);
+            transition: all 0.5s ease;
+            font-size: 1.5rem;
+            opacity: 0.5;  /* Set base opacity for emojis */
+        }
+
+        .title {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.5rem;
+            background: linear-gradient(45deg, #6366f1, #a855f7);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="title">Get Well Soon Jess! ❤️</h1>
+    <div class="cards-container">
+        <!-- Jenny's Card -->
+        <div class="card-modern-dark" data-emojis="🏳️‍⚧️,🍁,🎸,💙,🙏" style="--card-color: #F5A9B8">
+            <img src="images/jenny.png" alt="Get Well Soon Header" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Dear Jess,<br><br>
+                    Sorry you had to spend Christmas in the hospital, that's lame tbh. I hope you feel better soon and the Canadian medical system releases you back into the wild in time for new years!
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Love, Jenny xx</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">>fm server recent</a>
+                    <a href="" class="tag">Toogs appreciation society</a>
+                    <a href="" class="tag">Le français? Tolérable... grâce à toi</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Toogs's Card -->
+        <div class="card-modern-dark" data-emojis="🥖,🍁,❤️‍🩹" style="--card-color: #D3D3D3">
+            <img src="images/toogs.jpg" alt="Get Well Soon Header" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Hi Jess! <br><br>
+                    Clearly your heart turned out to just be too big, and it ran into problems. Hopefully it’ll get fixed up and can continue to get bigger. Sending you big healing vibes and hoping for a quick return home.
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Love, Toogs ❤️</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">honhonhon</a>
+                    <a href="" class="tag">canadia</a>
+                    <a href="" class="tag">croissant vs crepes</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- D's Card -->
+        <div class="card-modern-dark" data-emojis="🫀,🍑,💨" style="--card-color: #6a5acd ">
+            <img src="images/dinny.png" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Lovely Jess, <br><br>
+
+                    It sucks major butt trumps that you're stuck in theme hospital over the holidays so unexpectedly. <br><br>
+
+                    Wishing you all the best for your recovery, many healing Margot purrs upon your return home and the best possible outcome from this whole situation! 
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Much love,
+                        Dinny</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">#margotheals</a>
+                    <a href="" class="tag">#staceyisjealous</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Jupy's Card -->
+        <div class="card-modern-dark" data-emojis="💞, ‼️, 🍆, 🥰 ,😽" style="--card-color: #ffd1dc">
+            <img src="images/jupy.jpg" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    hii jess, im glad you’re getting stronger than ever, but im sorry you had to spend christmas in the stinky hospital 😭 you’ve been in my thoughts all week & i hope the next year brings you nothing but joy and growth 💞 ily!! 💞
+                </div>
+                <div class="signature-container">
+                    <div class="signature">love, jupy xx</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">gay</a>
+                    <a href="" class="tag">lesbian</a>
+                    <a href="" class="tag">trains</a>
+                
+                </div>
+            </div>
+        </div>
+
+        <!-- Tara's Card -->
+        <div class="card-modern-dark" data-emojis="👑" style="--card-color: #008080">
+            <img src="images/tara.gif" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Get Well Soon Jess, praying to the Elvis gods for a speedy recovery 
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Tara</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">#elvis4lyfe </a>
+                </div>
+            </div>
+        </div>
+
+         <!-- Pook's Card -->
+         <div class="card-modern-dark" data-emojis="☀️,✨" style="--card-color: #a855f7">
+            <img src="images/pooks.gif" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Hiiii Jess! I’m keeping you in my thoughts & hope the new year brings health and happiness for you.  <br> <br>
+P.S we will miss you at movie night, pls come home soon!!
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Lots of love from Pooks ☀️✨</div>
+                </div>
+                <div class="extra-info">
+                     </div>
+            </div>
+        </div>
+
+        <!-- Rain's Card -->
+        <div class="card-modern-dark" data-emojis="🎨,🎭,🌈,✏️,🎪" style="--card-color: #a855f7">
+            <img src="images/rain.png" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    dearest jess, please refer to the flowchart about what your body should do (that is get gud) <br> <br>
+
+get well soon and keep your cool dry
+                </div>
+                <div class="signature-container">
+                    <div class="signature">sent from my iphone, <br>
+                        rainy</div>
+                </div>
+                <div class="extra-info">
+                 </div>
+            </div>
+        </div>
+
+        <!-- Fern's Card -->
+        <div class="card-modern-dark" data-emojis="💖" style="--card-color: #a855f7">
+            <img src="" alt="" class="header-image">
+            <div class="content">
+                <div class="message">
+                    hi jess!! <br> <br>
+my partner and I have been keeping up with you this week, and while it's definitely a big bummer for your stay to be over the holidays, we're proud of you for sticking it out and prioritizing your health!! 
+                </div>
+                <div class="signature-container">
+                    <div class="signature">sending lots of love - fern 💖</div>
+                </div>
+                <div class="extra-info">
+                 </div>
+            </div>
+        </div>
+
+        <!-- Elo's Card -->
+        <div class="card-modern-dark" data-emojis="🐸❤️" style="--card-color: #a855f7">
+            <img src="images/elo.png" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Hi Jess! I'm not really good with words, but I want you to know that I've been thinking about you all week and it really sucks that you had to spend chrimus in the hospital
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Elo</div>
+                </div>
+                <div class="extra-info">
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- Dave's Card -->
+        <div class="card-modern-dark" data-emojis="" style="--card-color: #a855f7">
+            <img src="images/dave.png" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    Hi jess <br><br>
+
+I heard you're in the same bed Roger Ebert died in, I hope you get to keep your jaw
+                </div>
+                <div class="signature-container">
+                    <div class="signature">Love Dave</div>
+                </div>
+                <div class="extra-info">
+                   
+                </div>
+            </div>
+        </div>
+
+        <!-- Michael's Card -->
+        <div class="card-modern-dark" data-emojis="🎨,🎭,🌈,✏️,🎪" style="--card-color: #a855f7">
+            <img src="/api/placeholder/400/200" alt="[YOUR IMAGE HERE]" class="header-image">
+            <div class="content">
+                <div class="message">
+                    [YOUR MESSAGE HERE]
+                </div>
+                <div class="signature-container">
+                    <div class="signature">[YOUR SIGNATURE HERE]</div>
+                </div>
+                <div class="extra-info">
+                    <a href="" class="tag">[CUSTOM TAG BUTTON THINGY]</a>
+                    <a href="" class="tag">[ANOTHER TAG]</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.card-modern-dark').forEach(card => {
+            function createConfetti(emoji) {
+                const confetti = document.createElement('span');
+                confetti.className = 'confetti';
+                confetti.innerHTML = emoji;
+                
+                // Random starting position across the full width of the card
+                const x = Math.random() * card.offsetWidth * 0.9;
+                const y = Math.random() * card.offsetHeight * 0.9; // Start from bottom
+                
+                confetti.style.left = x + 'px';
+                confetti.style.top = y + 'px';
+                
+                card.appendChild(confetti);
+                
+                // Animate upward with some randomness
+                requestAnimationFrame(() => {
+                    confetti.style.opacity = '0.5'; // Set opacity to 0.5
+                    
+                });
+                
+                // Remove after animation
+                setTimeout(() => confetti.remove(), 1000);
+            }
+
+            // Start continuous confetti for this card
+            setInterval(() => {
+                const emojis = card.dataset.emojis.split(',');
+                const emoji = emojis[Math.floor(Math.random() * emojis.length)];
+                createConfetti(emoji);
+            }, 300); // Adjust timing as needed
+        });
+    </script>
+</body>
+</html>
